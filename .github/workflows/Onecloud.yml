@@ -21,10 +21,10 @@ on:
       - '.config'
   schedule:
     - cron: 30 20 * * *
-#  watch:
-#    types: started
-  schedule:
-    - cron: 0 16 * * *
+  watch:
+    types: started
+#  schedule:
+#    - cron: 0 16 * * *
 
 env:
   ###############手动修改##############
@@ -34,7 +34,7 @@ env:
   FEEDS_CONF: SL-3000/immortalwrtmaster/feeds.conf.default
   CONFIG_FILE: SL-3000/Onecloud.config
   DIY_P1_SH: SL-3000/diy-part1.sh
-  DIY_P2_SH: SL-3000/diy-part2.sh
+  DIY_P2_SH: SL-3000/diy-part2-immortalmaster.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: false
